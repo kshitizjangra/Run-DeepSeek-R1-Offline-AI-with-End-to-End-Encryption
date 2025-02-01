@@ -43,13 +43,6 @@ def encrypt_message(message):
 def decrypt_message(encrypted_message):
     return cipher.decrypt(encrypted_message.encode()).decode()
 
-# Welcome messages for AI
-WELCOME_MESSAGES = [
-    "Hello, I'm DeepSeek. How can I assist you with coding today??",
-    "Ready to code and debug together?? Let's get started..",
-    "Questions?? I'm here to help you."
-]
-
 # Load & Save Chat History with Encryption
 def load_chat_history():
     try:
@@ -85,7 +78,7 @@ if "message_log" not in st.session_state:
     if not st.session_state.message_log:
         st.session_state.message_log.append({
             "role": "ai",
-            "content": random.choice(WELCOME_MESSAGES),
+            "content": random.choice(WELCOME_MESSAGES), # type: ignore
             "timestamp": datetime.datetime.now().strftime("%H:%M:%S")
         })
 
@@ -170,7 +163,7 @@ with st.sidebar:
     
     # Clear Chat Button
     if st.button("Clear Chat"):
-        st.session_state.message_log = [{"role": "ai", "content": random.choice(WELCOME_MESSAGES), "timestamp": datetime.datetime.now().strftime("%H:%M:%S")}] 
+        st.session_state.message_log = [{"role": "ai", "content": random.choice(WELCOME_MESSAGES), "timestamp": datetime.datetime.now().strftime("%H:%M:%S")}]  # type: ignore
         save_chat_history(st.session_state.message_log)
         st.rerun()
     
