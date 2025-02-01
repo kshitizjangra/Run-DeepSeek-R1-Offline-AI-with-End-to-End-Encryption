@@ -1,7 +1,7 @@
 # DeepSeek R1 - AI Companion
 
 ## Overview
-DeepSeek R1 is an AI-powered coding assistant built with Streamlit. It provides an interactive chat interface to help developers with coding queries, debugging, and AI-generated solutions using locally hosted models.
+DeepSeek R1 is an AI-powered assistant built with Streamlit. It provides an interactive chat interface to help developers with coding queries, debugging, and AI-generated solutions using locally hosted models.
 
 This application is designed for privacy, ensuring that all data and interactions remain entirely local, with encrypted chat history for additional security.
 
