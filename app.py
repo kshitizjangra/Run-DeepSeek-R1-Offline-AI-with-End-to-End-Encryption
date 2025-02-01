@@ -205,7 +205,7 @@ with chat_container:
         """, unsafe_allow_html=True)
 
 # Chat Input & Processing
-user_query = st.chat_input("Type your coding question here...")
+user_query = st.chat_input("Type your question here..")
 
 def generate_ai_response(prompt_chain):
     processing_pipeline = prompt_chain | llm_engine | StrOutputParser()
