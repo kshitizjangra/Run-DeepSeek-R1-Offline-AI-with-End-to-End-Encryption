@@ -1,7 +1,7 @@
 # DeepSeek R1 - AI Companion
 
 ## Overview
-DeepSeek R1 is an AI-powered coding assistant built with Streamlit. It provides an interactive chat interface to help developers with coding queries, debugging, and AI-generated solutions using locally hosted models. 
+DeepSeek R1 is an AI-powered coding assistant built with Streamlit. It provides an interactive chat interface to help developers with coding queries, debugging, and AI-generated solutions using locally hosted models.
 
 This application is designed for privacy, ensuring that all data and interactions remain entirely local, with encrypted chat history for additional security.
 
@@ -45,7 +45,14 @@ pip install -r prerequisites.txt
 ---
 
 ## Running the Application
-After installing dependencies and setting up Ollama, run the application using:
+Before running the application, ensure that the Ollama server is running. You need to start it every time you want to run the app on localhost.
+
+```bash
+ollama serve
+```
+
+Once the server is running, start the application using:
+
 ```bash
 streamlit run app.py
 ```
