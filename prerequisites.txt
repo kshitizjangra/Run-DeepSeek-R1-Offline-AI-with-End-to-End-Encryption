@@ -1,0 +1,13 @@
+# For Web Framework
+streamlit
+
+# For Chat Encryption
+cryptography
+
+# For LLM & AI Model Handling
+langchain_ollama
+langchain_core
+
+# Utility Libraries
+watchdog  # Auto-reload for live changes (only if needed)
+pygments  # Syntax highlighting (optional)
