@@ -19,6 +19,13 @@ from langchain_core.prompts import (
 CHAT_HISTORY_FILE = "chat_history.json"
 ENCRYPTION_KEY_FILE = "encryption_key.key"
 
+# Define the welcome messages
+WELCOME_MESSAGES = [
+    "Welcome! Ask me anything!",
+    "Hello! How can I help you today?",
+    "Hi there! What’s on your mind?"
+]
+
 # Generate Encryption Key (Only Once)
 def generate_key():
     key = Fernet.generate_key()
